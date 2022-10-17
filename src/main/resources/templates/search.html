@@ -5,6 +5,10 @@
 <body>
 
 <div th:replace="fragments :: page-header"></div>
+<!--4) Display Search Results-In search.html, create a loop to display each job passed in from the controller.-->
+<!--Put the job results into a set of tables, similar to what you did for the list-jobs view.-->
+<!--reuse the code you just wrote in list-jobs.html by defining a new fragment in that file:-->
+<div th:replace="fragments :: displaysAllJobFieldsInSearch"></div>
 
 <div class="container body-content">
 
