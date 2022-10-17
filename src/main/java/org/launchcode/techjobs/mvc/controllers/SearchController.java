@@ -15,6 +15,7 @@ import static org.launchcode.techjobs.mvc.controllers.ListController.columnChoic
 @RequestMapping("search")
 public class SearchController {
 
+    //renders the form defined in the search.html
     @GetMapping(value = "")
     public String search(Model model) {
         model.addAttribute("columns", columnChoices);
