@@ -6,8 +6,10 @@
 
 <div th:replace="fragments :: page-header"></div>
 
+
 <div class="container body-content">
 
+<!--    search.html is used to display search results, in addition to rendering the form:-->
     <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
 
     <form th:action="@{/search/results}" method = "post">
@@ -37,6 +39,11 @@
     <hr />
 
     <!-- TODO #4 - Loop over the search results to display all job fields. -->
+    <!--4) Display Search Results-In search.html, create a loop to display each job passed in from the controller.-->
+    <!--Put the job results into a set of tables, similar to what you did for the list-jobs view.-->
+    <!--reuse the code you just wrote in list-jobs.html by defining a new fragment in that file:-->
+    <!--    See fragment below-->
+    <div th:replace="fragments :: displaysAllJobFieldsInSearch"></div>
 
 </div>
 
